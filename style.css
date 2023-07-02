@@ -1,0 +1,81 @@
+html {
+    font-size: 48px;
+}
+
+:root {
+    --message-stroke: 0.0625rem;
+    --message-stroke-min: -0.0625rem;
+    --name-stroke: 0.020833333333333332rem;
+    --name-stroke-min: -0.020833333333333332rem;
+}
+
+@keyframes slide-left {
+  from {
+      opacity: 0%;
+      margin-right: -20.833333333333332rem;
+      padding-left: 20.833333333333332rem;
+    }
+  to {
+      opacity: 100%;
+      margin-right: 0rem;
+      padding-left: 0rem;
+    }
+}
+
+@keyframes slide-right {
+  from {
+      opacity: 0%;
+      margin-left: -20.833333333333332rem;
+      padding-right: 20.833333333333332rem;
+    }
+  to {
+      opacity: 100%;
+      margin-left: 0rem;
+      padding-right: 0rem;
+    }
+}
+
+.message{
+    margin-left: 50%;
+    width: 50%;
+    display: block;
+    margin-top: -1.5625rem;
+    padding-left: 0.10416666666666667rem;
+    text-shadow:
+    var(--message-stroke-min) var(--message-stroke-min) 0 #000,
+     0   var(--message-stroke-min) 0 #000,
+     var(--message-stroke) var(--message-stroke-min) 0 #000,
+     var(--message-stroke)  0   0 #000,
+     var(--message-stroke)  var(--message-stroke) 0 #000,
+     0    var(--message-stroke) 0 #000,
+     var(--message-stroke-min)  var(--message-stroke) 0 #000,
+     var(--message-stroke-min)  0   0 #000;
+}
+
+.user_info{
+    width: 50%;
+    text-align: right;
+}
+
+.nick {
+    text-overflow: ellipsis !important;
+    overflow: hidden;
+    height:1.5625rem;
+    max-width:390px !important;
+    display:inline-block;
+    margin-bottom:-0.3541666666666667rem;
+    padding-right:0.8333333333333334rem;
+    white-space: nowrap;
+    padding-left: 0.10416666666666667rem;
+    filter: drop-shadow(var(--name-stroke-min) var(--name-stroke-min) 0 #000) drop-shadow(0 var(--name-stroke-min) 0 #000) drop-shadow(var(--name-stroke) var(--name-stroke-min) 0 #000) drop-shadow(var(--name-stroke) 0 0 #000) drop-shadow(var(--name-stroke) var(--name-stroke) 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(var(--name-stroke-min) var(--name-stroke) 0 #000) drop-shadow(var(--name-stroke-min) 0 0 #000);
+}
+
+.colon {
+    display:none;
+}
+
+.chat_line {
+    animation-name: slide-left;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
