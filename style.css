@@ -55,6 +55,7 @@ html {
         0                         var(--message-stroke)     0 #000,
         var(--message-stroke-min) var(--message-stroke)     0 #000,
         var(--message-stroke-min) 0                         0 #000;
+    letter-spacing: var(--message-stroke);
 }
 
 .user_info{
@@ -77,6 +78,7 @@ html {
         drop-shadow(var(--name-stroke) var(--name-stroke-min) 0 #000)
         drop-shadow(var(--name-stroke) var(--name-stroke) 0 #000)
         drop-shadow(var(--name-stroke-min) var(--name-stroke) 0 #000);
+    letter-spacing: var(--message-stroke);
 }
 
 .colon {
