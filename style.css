@@ -1,15 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-.chat_line {
-    font-family: 'Open Sans', sans-serif !important;
-}
-
-html {
-    font-size: 48px;
-}
-
 :root {
-    --message-stroke: 2px;
-    --message-stroke-min: -2px;
+    --message-stroke: 4px;
+    --message-stroke-min: -4px;
     --name-stroke: 1px;
     --name-stroke-min: -1px;
 }
@@ -17,35 +8,39 @@ html {
 @keyframes slide-left {
   from {
       opacity: 0%;
-      margin-right: -20.833333333333332rem;
-      padding-left: 20.833333333333332rem;
+      margin-right: -1000px;
+      padding-left: 1000px;
     }
   to {
       opacity: 100%;
-      margin-right: 0rem;
-      padding-left: 0rem;
+      margin-right: 0px;
+      padding-left: 0px;
     }
 }
 
 @keyframes slide-right {
   from {
       opacity: 0%;
-      margin-left: -20.833333333333332rem;
-      padding-right: 20.833333333333332rem;
+      margin-left: -1000px;
+      padding-right: 1000px;
     }
   to {
       opacity: 100%;
-      margin-left: 0rem;
-      padding-right: 0rem;
+      margin-left: 0px;
+      padding-right: 0px;
     }
+}
+
+#chat_container{
+    font-family:roboto,sans-serif !important;
 }
 
 .message{
     margin-left: 50%;
     width: 50%;
     display: block;
-    margin-top: -1.5625rem;
-    padding-left: 0.10416666666666667rem;
+    margin-top: -75px;
+    padding-left: 5px;
     text-shadow:
         var(--message-stroke-min) var(--message-stroke-min) 0 #000,
         0                         var(--message-stroke-min) 0 #000,
@@ -66,18 +61,22 @@ html {
 .nick {
     text-overflow: ellipsis !important;
     overflow: hidden;
-    height:1.5625rem;
+    height:71px;
     max-width:390px !important;
     display:inline-block;
-    margin-bottom:-0.3541666666666667rem;
-    padding-right:0.8333333333333334rem;
+    margin-bottom:-17px;
+    padding-right:40px;
     white-space: nowrap;
-    padding-left: 0.10416666666666667rem;
+    padding-left: 5px;
     filter: 
         drop-shadow(var(--name-stroke-min) var(--name-stroke-min) 0 #000)
-        drop-shadow(var(--name-stroke) var(--name-stroke-min) 0 #000)
-        drop-shadow(var(--name-stroke) var(--name-stroke) 0 #000)
-        drop-shadow(var(--name-stroke-min) var(--name-stroke) 0 #000);
+        drop-shadow(0                      var(--name-stroke-min) 0 #000)
+        drop-shadow(var(--name-stroke)     var(--name-stroke-min) 0 #000)
+        drop-shadow(var(--name-stroke)     0                      0 #000)
+        drop-shadow(var(--name-stroke)     var(--name-stroke)     0 #000)
+        drop-shadow(0                      var(--name-stroke)     0 #000)
+        drop-shadow(var(--name-stroke-min) var(--name-stroke)     0 #000)
+        drop-shadow(var(--name-stroke-min) 0                      0 #000);
     letter-spacing: var(--message-stroke);
 }
 
@@ -89,4 +88,8 @@ html {
     animation-name: slide-left;
     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
+}
+
+.chat_line {
+    font-family: roboto,sans-serif !important;
 }
