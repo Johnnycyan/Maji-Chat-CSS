@@ -1,6 +1,6 @@
 :root {
-    --message-stroke: 4px;
-    --message-stroke-min: -4px;
+    --message-stroke: 3px;
+    --message-stroke-min: -3px;
     --name-stroke: 1px;
     --name-stroke-min: -1px;
 }
@@ -50,7 +50,6 @@
         0                         var(--message-stroke)     0 #000,
         var(--message-stroke-min) var(--message-stroke)     0 #000,
         var(--message-stroke-min) 0                         0 #000;
-    letter-spacing: var(--message-stroke);
 }
 
 .emote {
@@ -81,7 +80,6 @@
         drop-shadow(0                      var(--name-stroke)     0 #000)
         drop-shadow(var(--name-stroke-min) var(--name-stroke)     0 #000)
         drop-shadow(var(--name-stroke-min) 0                      0 #000);
-    letter-spacing: var(--message-stroke);
 }
 
 .colon {
