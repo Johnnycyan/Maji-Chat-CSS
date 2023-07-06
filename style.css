@@ -53,6 +53,10 @@
     letter-spacing: var(--message-stroke);
 }
 
+.emote {
+    margin-left: -8px;
+}
+
 .user_info{
     width: 50%;
     text-align: right;
