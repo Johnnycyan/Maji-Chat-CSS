@@ -37,10 +37,10 @@
 
 .message{
     margin-left: 50%;
-    width: 50%;
+    width: 45%;
     display: block;
     margin-top: -75px;
-    padding-left: 5px;
+    padding-left: 45px;
     text-shadow:
         var(--message-stroke-min) var(--message-stroke-min) 0 #000,
         0                         var(--message-stroke-min) 0 #000,
@@ -71,7 +71,6 @@
     max-width:390px !important;
     display:inline-block;
     margin-bottom:-17px;
-    padding-right:40px;
     white-space: nowrap;
     padding-left: 5px;
     filter: 
