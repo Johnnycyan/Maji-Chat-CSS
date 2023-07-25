@@ -81,7 +81,7 @@
         drop-shadow(var(--name-stroke)     var(--name-stroke)     0 #000)
         drop-shadow(0                      var(--name-stroke)     0 #000)
         drop-shadow(var(--name-stroke-min) var(--name-stroke)     0 #000)
-        drop-shadow(var(--name-stroke-min) 0                      0 #000);
+        drop-shadow(var(--name-stroke-min) 0                      0 #000) !important;
 }
 
 .colon {
