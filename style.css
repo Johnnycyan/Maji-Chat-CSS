@@ -36,10 +36,8 @@
 }
 
 .message{
-    margin-left: 50%;
     width: 45%;
     display: block;
-    margin-top: -75px;
     padding-left: 45px;
     text-shadow:
         var(--message-stroke-min) var(--message-stroke-min) 0 #000,
@@ -65,14 +63,13 @@
 }
 
 .nick {
-    text-overflow: ellipsis !important;
+    text-overflow: ellipsis;
     overflow: hidden;
-    height:71px;
-    max-width:390px !important;
+    max-width:60%;
     display:inline-block;
-    margin-bottom:-17px;
     white-space: nowrap;
     padding-left: 5px;
+    vertical-align: bottom;
     filter: 
         drop-shadow(var(--name-stroke-min) var(--name-stroke-min) 0 #000)
         drop-shadow(0                      var(--name-stroke-min) 0 #000)
@@ -93,8 +90,6 @@
     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
     font-weight:600;
-}
-
-.chat_line {
+    display: flex;
     font-family: roboto,sans-serif !important;
 }
