@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 :root {
     --message-stroke: 3px;
     --message-stroke-min: -3px;
@@ -32,7 +33,7 @@
 }
 
 #chat_container{
-    font-family:roboto,sans-serif !important;
+    font-family:inter,sans-serif !important;
 }
 
 .message{
@@ -90,5 +91,5 @@
     animation-timing-function: ease-in-out;
     font-weight:600;
     display: flex;
-    font-family: roboto,sans-serif !important;
+    font-family: inter,sans-serif !important;
 }
