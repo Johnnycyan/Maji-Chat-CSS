@@ -40,16 +40,7 @@
     width: 45%;
     display: block;
     padding-left: 45px;
-    text-shadow:
-        var(--message-stroke-min) var(--message-stroke-min) 0 #000,
-        0                         var(--message-stroke-min) 0 #000,
-        var(--message-stroke)     var(--message-stroke-min) 0 #000,
-        var(--message-stroke)     0                         0 #000,
-        var(--message-stroke)     var(--message-stroke)     0 #000,
-        0                         var(--message-stroke)     0 #000,
-        var(--message-stroke-min) var(--message-stroke)     0 #000,
-        var(--message-stroke-min) 0                         0 #000;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    filter: drop-shadow(rgb(0, 0, 0) 0px 1px 0.1px) drop-shadow(rgb(0, 0, 0) 1px 0px 0.1px) drop-shadow(0px 0px 5px rgba(0,0,0,1));
 }
 
 .emote {
@@ -59,7 +50,7 @@
 .user_info{
     width: 50%;
     text-align: right;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
 }
 
 .nick {
@@ -70,15 +61,7 @@
     white-space: nowrap;
     padding-left: 5px;
     vertical-align: bottom;
-    filter: 
-        drop-shadow(var(--name-stroke-min) var(--name-stroke-min) 0 #000)
-        drop-shadow(0                      var(--name-stroke-min) 0 #000)
-        drop-shadow(var(--name-stroke)     var(--name-stroke-min) 0 #000)
-        drop-shadow(var(--name-stroke)     0                      0 #000)
-        drop-shadow(var(--name-stroke)     var(--name-stroke)     0 #000)
-        drop-shadow(0                      var(--name-stroke)     0 #000)
-        drop-shadow(var(--name-stroke-min) var(--name-stroke)     0 #000)
-        drop-shadow(var(--name-stroke-min) 0                      0 #000) !important;
+    filter: drop-shadow(rgb(0, 0, 0) 0px 1px 0.1px) drop-shadow(rgb(0, 0, 0) 1px 0px 0.1px);
 }
 
 .colon {
@@ -91,5 +74,4 @@
     animation-timing-function: ease-in-out;
     font-weight:600;
     display: flex;
-    font-family: inter,sans-serif !important;
 }
